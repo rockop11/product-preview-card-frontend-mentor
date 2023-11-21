@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    width: 90%;
+    max-width: 338px;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.mobile-img {
+    width: 100%;
+    border-radius: 14px 14px 0px 0px;
+}
+
+article {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.image-article {
+    border-radius: 14px 14px 0px 0px;
+}
+
+.info-article {
+    border-radius: 0px 0px 14px 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h1 {
+    font-size: 12px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 32px;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.prices {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.active-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+}
+
+.total-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    height: 45px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+footer {
+    background-color: hsl(212, 21%, 14%);
+    color: hsl(30, 38%, 92%);
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(158, 36%, 37%);
+}
+
+@media (min-width: 768px) {
+    .mobile-img {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+    }
+
+    .desktop-img {
+        display: block;
+        width: 100%;
+        border-radius: 14px 0px 0px 14px;
+    }
+
+    .image-article {
+        width: 50%;
+        border-radius: 14px 0px 0px 14px;
+    }
+
+    .info-article {
+        width: 50%;
+        border-radius: 0px 14px 14px 0px;
+        gap: 25px;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsl(159, 66%, 18%);
+    }
+}
